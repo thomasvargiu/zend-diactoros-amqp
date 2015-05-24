@@ -1,0 +1,31 @@
+{
+  "name": "thomasvargiu/zend-diactoros-amqp",
+  "description": "An example implementation of Zend Diactoros with AMQP for state-less applications",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Vargiu",
+      "email": "tvargiu@gmail.com"
+    }
+  ],
+  "require": {
+    "zendframework/zend-diactoros": "~1.0",
+    "videlalvaro/php-amqplib": "~2.2"
+  },
+  "require-dev": {
+    "zendframework/zend-stratigility": "~1.0",
+    "phpunit/PHPUnit": "~4.6",
+    "squizlabs/php_codesniffer": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tmv\\Diactoros\\Amqp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TmvTest\\Diactoros\\Amqp\\": "test/"
+    }
+  }
+}
